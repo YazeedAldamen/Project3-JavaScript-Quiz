@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Master</title>
+    <link rel="stylesheet" href="../css/imitate.css" />
+    <link rel="stylesheet" href="/css/Navbar.css" />
+    <link rel="icon" href="/img/java-script.png" />
+  </head>
+  <body>
+    <nav>
+      <div id="LogoDiv">
+        <a href="../html/home.html"
+          ><img src="/img/java-script.png" id="Logo" /></a
+        ><span id="TextLogo">Master</span>
+      </div>
+      <div id="NavContents" style="width: 10%">
+        <button onclick="location.href='../html/home.html'">Log Out</button>
+        <i class="fas fa-bars" onclick="showlist()"></i>
+        <div id="List">
+          <div class="Item">log out</div>
+        </div>
+      </div>
+    </nav>
+    <div class="main-div">
+      <div id="header"><h1>Imitate</h1></div>
+      <div class="inner-div">
+        <h2 class="question">Question comes here</h2>
+        <ul>
+          <li>
+            <input
+              type="radio"
+              name="answer"
+              id="ans1"
+              class="answer"
+              value=""
+              onclick="showbutton()"
+            />
+            <label for="ans1" id="option1" class="label">Answer Option</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="answer"
+              id="ans2"
+              class="answer"
+              onclick="showbutton()"
+            />
+            <label for="ans2" id="option2" class="label">Answer Option</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="answer"
+              id="ans3"
+              class="answer"
+              onclick="showbutton()"
+            />
+            <label for="ans3" id="option3" class="label">Answer Option</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="answer"
+              id="ans4"
+              class="answer"
+              onclick="showbutton()"
+            />
+            <label for="ans4" id="option4" class="label">Answer Option</label>
+          </li>
+        </ul>
+        <button id="submit" disabled>Next</button>
+        <button id="finish">Finish</button>
+      </div>
+    </div>
+    <script src="/js/imitate.js"></script>
+  </body>
+</html>

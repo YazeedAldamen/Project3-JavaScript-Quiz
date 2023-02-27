@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/img/java-script.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8b56cb52b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+ 
+        .main1{
+            padding-top: 5%;
+            background-image:url(/img/background.jpg);
+             height: 550px;
+             width: 100%;
+             background-size: cover;
+            display: flex;}
+.main1 div{
+width: 50%;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    color: #21325E;
+    padding: 20px;
+}
+h1 span{
+    color: #FAC710;
+    font-weight: bold;
+}
+       .main2{
+        margin-top: 50px;
+        color: #21325E;
+     
+       }
+
+       .sections{
+        margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+       }
+    
+       .sections div{
+        width: 20%;
+        padding: 2%;
+        text-align: center;
+        margin: 10px;
+       }
+       .sec1{
+        background-color: #21325E;
+        color: white;
+       }
+       .sec2{
+        background-color: #FAC710;
+        color: #21325E;
+       }
+       .sec3{
+        background-color: #21325E;
+        color: white;
+       }
+      .section2{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #21325E;
+        color: white;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+      }
+      .main3{
+        height: 300px;
+      }
+    
+    
+        .btn2{
+            margin-top: 10%;
+            background-color: #FAC710;
+            font-size: large;
+            color:#21325E;
+            width: 250px;
+            height: 70px;
+            font-weight: bold;
+            border: 0px;
+        }
+        .btn2:hover{
+            background-color: #21325E;
+            color: white;
+        }
+        .btn:hover{
+            background-color: #21325E;
+            color: white;
+        }
+        
+
+        @media only screen and (min-device-width:0px) and (max-device-width :480px) {
+          
+            .main1{
+                background-image: none;
+                align-items: center;
+                justify-content: center;
+                font-size: 8px;
+                height: auto;
+            }
+            .main2{
+                margin-top: 10px;
+            }
+            .sections{
+                flex-direction: column;
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+            .sections div{
+                width: auto;
+                margin-bottom: 20px;
+            }
+            #non{
+                display: none;
+            }
+            #home{
+                width: 100%;
+            }
+            .btn2{
+                width: 150px;
+                height: 50px;
+                font-size: 15px;
+            }
+            .sec1, .sec2, .sec3{
+                font-size: 15px;
+            }
+            #NavContents {
+                    width: 20%;
+                                        }
+        }
+        
+        @media only screen and (min-device-width:481px) and (max-device-width :768px) {
+            .main1 {
+                height: 350px;
+                justify-content: right;
+            }
+            .main1 div {
+                font-size: 10px;
+            }
+            .btn2{
+                width: 167px;
+                height: 46px;
+                font-size: 15px;
+            }
+            #non{
+                display: none;
+            }
+            #NavContents {
+                    width: 10%;
+                                        }
+            }
+
+        
+
+    </style>
+</head>
+
+<body>
+        <nav>
+            <div id="LogoDiv" >
+                <a href="/html/home.html"><img src="/img/java-script.png" id="Logo"></a><span id="TextLogo">Master</span>
+            </div>
+            <div id="NavContents">
+                <Button onclick="location.href='../html/log.html'">Log In</Button>
+                <Button onclick="location.href='../html/regist.html'">Register</Button>
+                <i class="fas fa-bars" onclick="showlist()"></i>
+                 <div id="List">
+                  <div class="Item">Log In</div>
+                  
+                 </div>
+            </div>
+          </nav>
+
+    <div class="main1">
+        <div id="non"></div>
+        <div class="home">
+            <h1><span>JS MASTER </span>ACADEMY</h1><br>
+            <h2> We are excited to open Registration for the 2022 trials.<br>
+             All you have to do to make the first step towards a successful digital career is to take this simple multi-part Quiz.</H2>
+       
+            <button class="btn2"  onclick="location.href='/html/log.html'">Start Quiz Now</button> </div>
+</div>
+
+    <div class= main2>
+       
+        <h1 style="text-align: center;" id="About">About</h1> </div>
+  <div class="sections">
+<div class="sec1"> <h2> Our Company</h2>
+    <p></p>JS master   Academy is, One Of The Biggest Academies In Jordan Teaching JavaScript, we aim to be the No.1  academic institution in the Jordanian digital space.</p></div>
+<div class="sec2"> <h2> Our training</h2>
+    <p></p>To achieve our vision, we offer free training to the most innovative and qualified individuals in the Jordanian workforce, Offering comprehensive and detailed training with an active learning approach.</p></div>
+<div class="sec3"> <h2> Our trainers</h2>
+    <p></p>Our trainers are cherry-picked from the most skilled and professional Web Developers in the Middle East, Adopting an active pedagogy curriculum which makes our trainees work-ready.</p></div>
+</div>
+
+<div>
+
+</div>    
+
+    <br>
+    <div class="footer1">
+        <div class="footer2">
+        <div> <a><img src="/img/phone.png"> +96278888888</a></div>
+        <div>  <img src="/img/email.png"> Mail : masterjs@company.com</div>
+        <div> <a style="text-decoration:none ;" href="https://www.linkedin.com/"><img src="/img/linkedin.png"> Masterjs.linkedin</a></div>
+        <div><a style="text-decoration:none ;" href="https://github.com/"><img src="/img/github.png"> Masterjs.github</a></div>
+    </div>
+    </div>
+
+    <script>
+        var flag = true;
+        function showlist() {
+
+            if (flag) {
+                var Burger = document.getElementById("List");
+                Burger.style.display = "block";
+                flag = false;
+            }
+            else {
+                var Burger = document.getElementById("List");
+                Burger.style.display = "none";
+                flag = true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

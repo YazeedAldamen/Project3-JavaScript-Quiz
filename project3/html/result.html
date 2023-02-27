@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Master</title>
+    <link rel="stylesheet" href="/css/Navbar.css" />
+    <link rel="icon" href="/img/java-script.png" />
+
+    <style>
+      .main3 {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #21325e;
+      }
+      .quastion-sec {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+        height: 200px;
+        width: 70%;
+        border: 5px SOLID #21325e;
+        padding-left: 50px;
+        gap: 10px;
+        border-radius: 20px;
+        background-color: white;
+      }
+
+      .correct {
+        color: rgb(17, 177, 17);
+        font-weight: bold;
+      }
+      .incorrect {
+        color: red;
+        font-weight: bold;
+      }
+
+      h1 {
+        margin-top: 40px;
+      }
+      .main1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: #e6e6e6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div id="LogoDiv">
+        <a href="/html/home.html"
+          ><img src="/img/java-script.png" id="Logo" /></a
+        ><span id="TextLogo">Master</span>
+      </div>
+      <div id="NavContents" style="width: 10%">
+        <button onclick="location.href='../html/home.html'">Log Out</button>
+        <i class="fas fa-bars" onclick="showlist()"></i>
+        <div id="List">
+          <div class="Item">log out</div>
+        </div>
+      </div>
+    </nav>
+    <div class="main1">
+      <div class="main3">
+        <h1>Imitate level</h1>
+        <div class="quastion-sec">
+          <p>
+            Question (1): Inside which HTML element do we put the JavaScript?
+          </p>
+          <ul>
+            <li class="correct">&lt;js&gt;</li>
+            <li class="incorrect">&lt;script&gt;</li>
+            <li class="incorrect">&lt;javascript&gt;</li>
+            <li class="incorrect">&lt;scripting&gt;</li>
+          </ul>
+        </div>
+
+        <div class="quastion-sec">
+          <p>
+            Question (2): Whats the output of the following code?\ var x =
+            "50";\ var y = "100";\ document.write(x+y);',
+          </p>
+          <ul>
+            <li class="correct">"50100"</li>
+            <li class="incorrect">"Null"</li>
+            <li class="incorrect">"150"</li>
+            <li class="incorrect">"5000"</li>
+          </ul>
+        </div>
+
+        <div class="quastion-sec">
+          <p>Question (3):What happens if the tested condition is false?</p>
+          <ul>
+            <li class="incorrect">The code's execution will be stopped</li>
+            <li class="correct">
+              The code does nothing and moves to the next section
+            </li>
+            <li class="incorrect">
+              The code in the braces is executed anyway",
+            </li>
+            <li class="incorrect">None</li>
+          </ul>
+        </div>
+
+        <div class="quastion-sec">
+          <p>
+            Question (4):What built-in property is used to count the number of
+            characters in an object's property?
+          </p>
+          <ul>
+            <li class="incorrect">write</li>
+            <li class="incorrect">size</li>
+            <li class="correct">length</li>
+            <li class="incorrect">width</li>
+          </ul>
+        </div>
+        <h1>Adapt level</h1>
+        <div class="quastion-sec">
+          <p>
+            Question (1): An object's properties are similar to variables;
+            methods are similar to:
+          </p>
+          <ul>
+            <li class="correct">functions</li>
+            <li class="incorrect">conditionals</li>
+            <li class="incorrect">properties</li>
+            <li class="incorrect">None</li>
+          </ul>
+        </div>
+
+        <div class="quastion-sec">
+          <p>
+            Question (2): What is the output of the following expression?
+            function multNmbrs(a, b) {\ var c = a*b; }\ multNmbrs(2, 6);\
+          </p>
+          <ul>
+            <li class="incorrect">24</li>
+            <li class="correct">12</li>
+            <li class="incorrect">Nothing</li>
+            <li class="incorrect">None</li>
+          </ul>
+        </div>
+
+        <div class="quastion-sec">
+          <p>
+            Question (3): "What keyword is used for creating an instance of an
+            object?
+          </p>
+          <ul>
+            <li class="incorrect">var</li>
+            <li class="incorrect">make</li>
+            <li class="correct">new</li>
+            <li class="incorrect">None</li>
+          </ul>
+        </div>
+
+        <div class="quastion-sec">
+          <p>
+            Question (4): In reference to an object, color, height, weight and
+            name are all examples of:",
+          </p>
+          <ul>
+            <li class="incorrect">nouns</li>
+            <li class="correct">properties</li>
+            <li class="incorrect">methods</li>
+            <li class="incorrect">None</li>
+          </ul>
+        </div>
+
+        <div class="quastion-sec">
+          <p>
+            Question (5): What is the correct syntax for referring to an
+            external script called 'script.js?
+          </p>
+          <ul>
+            <li class="incorrect">&lt;script name='script.js&gt;</li>
+            <li class="correct">&lt;script src='script.js&gt;</li>
+            <li class="incorrect">&lt;script href='script.js&gt;</li>
+            <li class="incorrect">&lt;None&gt;</li>
+          </ul>
+        </div>
+        <div class="quastion-sec">
+          <p>Question (6): What is DOM?</p>
+          <ul>
+            <li class="correct">Document Object Model</li>
+            <li class="incorrect">"Definitive Object Model</li>
+            <li class="incorrect">Document Orientation Model</li>
+            <li class="incorrect">None</li>
+          </ul>
+        </div>
+
+        <h1>Transpose level</h1>
+        <div class="quastion-sec">
+          <p>Question (1): Which method is used to replace nodes?</p>
+          <ul>
+            <li class="correct">replaceChild</li>
+            <li class="incorrect">replace</li>
+            <li class="incorrect">replaceElements</li>
+            <li class="incorrect">None</li>
+          </ul>
+        </div>
+
+        <div class="quastion-sec">
+          <p>
+            Question (2): A paragraph is inside a div element. You want the
+            paragraphs click event to be handled first. You should use:
+          </p>
+          <ul>
+            <li class="incorrect">Handling</li>
+            <li class="incorrect">Capturing</li>
+            <li class="correct">Bubbling</li>
+            <li class="incorrect">None</li>
+          </ul>
+        </div>
+
+        <div class="quastion-sec">
+          <p>
+            Question (3): "What information results from creating a Date Object?
+            object?
+          </p>
+          <ul>
+            <li class="incorrect">The date when the web page was hosted</li>
+            <li class="incorrect">An empty string</li>
+            <li class="correct">The current date and time</li>
+            <li class="incorrect">None</li>
+          </ul>
+        </div>
+
+        <div class="quastion-sec">
+          <p>
+            Question (4): In associative arrays, index numbers are replaced
+            with:
+          </p>
+          <ul>
+            <li class="incorrect">functions</li>
+            <li class="incorrect">variable names</li>
+            <li class="incorrect">constants</li>
+            <li class="correct">strings</li>
+          </ul>
+        </div>
+
+        <div class="quastion-sec">
+          <p>
+            Question (5): By entering var example = new Array(); we create an
+            empty array which can be filled...
+          </p>
+          <ul>
+            <li class="incorrect">nevermore</li>
+            <li class="correct">"anytime later</li>
+            <li class="incorrect">just after it</li>
+            <li class="incorrect">None</li>
+          </ul>
+        </div>
+        <div class="quastion-sec">
+          <p>
+            Question (6): What is the output of the following code? let names =
+            ['John', 'Fred', 'Ann']; let [Ann, Fred, John] = names;
+            console.log(John);
+          </p>
+          <ul>
+            <li class="incorrect">Fred</li>
+            <li class="incorrect">John</li>
+            <li class="incorrect">Error</li>
+            <li class="correct">Ann</li>
+          </ul>
+        </div>
+        <div class="quastion-sec">
+          <p>
+            Question (7): What is the output of the following code?\ // const
+            obj = {one: 1, two: 2};\ // let {one:first, two:second} = obj;\ //
+            console.log(one);
+          </p>
+          <ul>
+            <li class="correct">error</li>
+            <li class="incorrect">1</li>
+            <li class="incorrect">2</li>
+            <li class="incorrect">the full object (obj)</li>
+          </ul>
+        </div>
+        <div class="quastion-sec">
+          <p>Question (8): The 'this' keyword in the method means:</p>
+          <ul>
+            <li class="incorrect">The name of the given method</li>
+            <li class="incorrect">The name of the web page</li>
+            <li class="correct">The current object</li>
+            <li class="incorrect">None</li>
+          </ul>
+        </div>
+        <div class="quastion-sec">
+          <p>
+            Question (9): In order to use the object's properties within a
+            function, use:
+          </p>
+          <ul>
+            <li class="incorrect">The function's name</li>
+            <li class="correct">The 'this' keyword</li>
+            <li class="incorrect">Just the name of the property</li>
+            <li class="incorrect">The 'var' keyword</li>
+          </ul>
+        </div>
+        <div class="quastion-sec">
+          <p>
+            Question (10): How do you round the number 7.25, to the nearest
+            integer?
+          </p>
+          <ul>
+            <li class="incorrect">Math.rnd(7.25)</li>
+            <li class="incorrect">round(7.25)</li>
+            <li class="correct">Math.round(7.25)</li>
+            <li class="incorrect">rnd(7.25)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var flag = true;
+      function showlist() {
+        if (flag) {
+          var Burger = document.getElementById("List");
+          Burger.style.display = "block";
+          flag = false;
+        } else {
+          var Burger = document.getElementById("List");
+          Burger.style.display = "none";
+          flag = true;
+        }
+      }
+    </script>
+  </body>
+</html>
